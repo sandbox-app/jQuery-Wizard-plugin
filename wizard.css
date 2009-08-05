@@ -1,0 +1,171 @@
+/**
+ * Title : jqwizard css
+ * Author: Hiroshi Kuwabara
+ *    inspired by Cody.Lindley@albertsons.com
+ * 
+ */
+
+
+/*
+ * jqwizard width
+ *	 edit as you like
+ */
+.jqwizard {width:920px;}
+
+
+/*
+ * Base Styles
+ */
+.jqwizard a:link {color:#009BC0;outline:none;text-decoration: none;font-weight:bold;}
+.jqwizard a:visited {color:#009BC0;outline:none;text-decoration: none;font-weight:bold;}
+.jqwizard a:hover {color:#004882;outline:none;font-weight:bold;}
+.jqwizard a:active {color:#009BC0;outline:none;text-decoration: none;font-weight:bold;}
+.jqwizard a:focus {color:#009BC0;outline:none;text-decoration: none;font-weight:bold;}
+.jqwizard :focus { -moz-outline-style: none; }
+.jqwizard img {border:none;}
+.jqwizard ul {margin:0px; padding:0px;}
+
+
+/*
+ * clearfix
+ */
+.jqwizard_buttons:after,
+.jqwizard_navi:after {content:".";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;line-height:0;font-size:0%;}
+.jqwizard_buttons,
+.jqwizard_navi {display:inline-block;}
+/* Hides from IE-mac \*/
+* html .jqwizard_buttons,
+* html .jqwizard_navi {height:1%;}
+.jqwizard_buttons,
+.jqwizard_navi {display:block;}
+/* End hide from IE-mac */
+
+
+/*
+ * .jqwizard_buttons
+ */
+.jqwizard_buttons {}
+.jqwizard_next {float:right}
+.jqwizard_previous {float:left}
+
+/*
+ * .jqwizard_content
+ */
+.jqwizard_content {
+	display:none;
+}
+
+/*
+ * .jqwizard_navi
+ */
+.jqwizard_navi {
+	width:100%;
+	overflow:hidden;
+}
+
+* html .jqwizard_navi ul {
+    width:101%;
+}
+
+.jqwizard_navi li {
+	height:71px;
+	list-style:none;
+	float:left;
+	overflow:hidden;
+	background-color:#EBEBEB;
+	background-image: url(img/navBtn.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.jqwizard_navi li.jqwizard_current {
+	background-color:#C36615;
+	background-image: url(img/navCurrentBtn.gif);
+}
+
+.jqwizard_navi li.jqwizard_lastdone {
+	background-color:#7C8437;
+	background-image: url(img/navLastDoneBtn.gif);
+}
+
+.jqwizard_navi li.jqwizard_done {
+	background-color:#7C8437;
+	background-image: url(img/navDoneBtn.gif);
+}
+
+.jqwizard_navi li a {
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+.jqwizard_navi li a,
+.jqwizard_navi li a:link,
+.jqwizard_navi li a:visited,
+.jqwizard_navi li a:hover,
+.jqwizard_navi li a:active {
+	color:#ccc;
+	cursor:default;
+}
+
+.jqwizard_navi li.jqwizard_lastdone a,
+.jqwizard_navi li.jqwizard_lastdone a:link,
+.jqwizard_navi li.jqwizard_lastdone a:visited,
+.jqwizard_navi li.jqwizard_lastdone a:hover,
+.jqwizard_navi li.jqwizard_lastdone a:active,
+.jqwizard_navi li.jqwizard_current a,
+.jqwizard_navi li.jqwizard_current a:link,
+.jqwizard_navi li.jqwizard_current a:visited,
+.jqwizard_navi li.jqwizard_current a:hover,
+.jqwizard_navi li.jqwizard_current a:active,
+.jqwizard_navi li.jqwizard_done a,
+.jqwizard_navi li.jqwizard_done a:link,
+.jqwizard_navi li.jqwizard_done a:visited,
+.jqwizard_navi li.jqwizard_done a:hover,
+.jqwizard_navi li.jqwizard_done a:active {
+	color:#fff;
+}
+
+.jqwizard_navi li.jqwizard_done a:hover,
+.jqwizard_navi li.jqwizard_lastdone a:hover {
+	color:#FFFF99;
+}
+
+.jqwizard_navi li.jqwizard_done a,
+.jqwizard_navi li.jqwizard_lastdone a {
+	cursor:pointer;
+}
+
+.jqwizard_navi li a em {
+	width:150px;
+	display:block;
+	margin-left:10px;
+	padding-top:6px;
+	font-style:normal;
+	font-weight:bold;
+}
+
+.jqwizard_navi li a span {
+	width:140px;
+	display:block;
+	margin-left:10px;
+	font-weight:normal;
+}
+
+.jqwizard_navi li.jqwizard_no_bg {
+	background-image:none !important;
+}
+
+/* .jqwizard_navi_five_step */
+.jqwizard_navi_five_step li {width:20%;}
+
+/* .jqwizard_navi_four_step */
+.jqwizard_navi_four_step li {width:25%;}
+
+/* .jqwizard_navi_three_step */
+.jqwizard_navi_three_step li {width:33%;}
+.jqwizard_navi_three_step li.jqwizard_no_bg {width:34%;}
+
+/* .jqwizard_navi_two_step */
+.jqwizard_navi_two_step li {width:50%;}
+* html .jqwizard_navi_two_step li.jqwizard_no_bg {width:49%;}
